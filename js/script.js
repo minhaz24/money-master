@@ -34,10 +34,13 @@ function SaveBalance() {
     const saveIncome = document.getElementById('saving');
     const saveValue = parseInt(saveIncome.value);
 
+    const totalIncome = document.getElementById('income');
+    const incomeValue = parseInt(totalIncome.value);
+
     const totalBalence = document.getElementById('total-balence');
     const balenceValue = parseInt(totalBalence.innerText);
 
-    const saveAmountBalance = (balenceValue * saveValue) / 100;
+    const saveAmountBalance = (incomeValue * saveValue) / 100;
     SavingAmount(saveAmountBalance);
     RemainingBalance(balenceValue - saveAmountBalance);
 }
