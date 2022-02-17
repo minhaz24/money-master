@@ -19,6 +19,21 @@ function CalculateCost() {
 
     const stillBalance = incomeValue - totalCost;
 
+
+    if (rentCostValue >= 0 && foodCostValue >=0 && clothCost >=0 && incomeValue>=0){
+
+    }
+    else if (rentCostValue < 0 || foodCostValue <0 || clothCost <0 || incomeValue < 0){
+        swal("Warning!", "You have enter Negetive Number", "error");
+    }
+    else{
+        swal("Warning!", "You have enter String", "error");
+    }
+
+    if (stillBalance < 0) {
+        swal("Warning!", "You have Negetive Balance", "error");
+    }
+
     if (stillBalance + totalCost == incomeValue && p == 1) {
         TotalBalance(stillBalance);
         TotalExpense(totalCost, incomeValue);
