@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Macbook-Pro</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-------------------------
+          Main Section
+    -------------------------->
+    <main>
+        <section class="pt-3 mt-5">
+            <div class="container">
+                <div class="row ">
+                    <h1 class="text-center mb-5 fw-bold text-info">Money Master</h1>
+                    <div class="col-md-6">
+                        <img src="images/money-master.png" class="w-75 mx-auto d-block" alt="mac.png">
+                    </div>
+                    <div class="col-md-6 bg-light">
+
+                        <!-------------------------
+                            Income Section
+                        -------------------------->
+                        <div>
+                            <h5 class="pt-5 d-flex justify-content-center">Income</h5>
+                        </div>
+                        <div class="pt-2 d-flex justify-content-center">
+                            <h6 class="pe-2 pt-2">Income</h6>
+                            <input id="income" type="number" style="padding:5px">
+                        </div>
+
+
+                        <!-------------------------
+                            Expense Section
+                        -------------------------->
+                        <div>
+                            <h5 class="pt-3 d-flex justify-content-center">Expenses</h5>
+                        </div>
+                        <div class="pt-2 d-flex justify-content-center">
+                            <h6 class="pe-2 pt-2">Food:</h6>
+                            <input id="food-cost" type="number" style="padding:5px">
+                        </div>
+
+                        <div class="pt-2 d-flex justify-content-center">
+                            <h6 class="pe-2 pt-2">Rent:</h6>
+                            <input id="rent-cost" type="number" style="padding:5px">
+                        </div>
+
+                        <div class="pt-2 d-flex justify-content-center">
+                            <h6 class="pe-2 pt-2">Cloth:</h6>
+                            <input id="cloth-cost" type="number" style="padding:5px">
+                        </div>
+
+                        <!-------------------------
+                            Calculation Section
+                        -------------------------->
+
+                        <div class="d-flex justify-content-center">
+                            <div class="pt-4 pb-2">
+                                <button class=" ps-5 pe-5 btn btn-danger" onclick="CalculateCost()">Calculate</button>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                                <h5 class="pt-2">Total Expenses <span id="totalCost">00</span></h5>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                                <h5 class="pt-3">Balance: 4500</h5>
+                        </div>
+
+                        <!-------------------------
+                            Savings Section
+                        -------------------------->
+
+                        <div class="pt-2 d-flex justify-content-center">
+                            <h6 class="pe-2 pt-2">Savings:</h6>
+                            <input id="saving" type="text" style="padding:5px">
+                            <h6 class="pe-2 pt-2 ps-2">%</h6>
+                            <button class="mb-2 pe-3 ps-3 btn btn-danger">Save</button>
+                        </div>
+                        <div class="pt-2 d-flex justify-content-center">
+                            <h5>Saving Amount: 2000</h5>
+                        </div>
+                        <div class="pt-2 d-flex justify-content-center">
+                            <h5>Remaining Balance: 2500</h5>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
